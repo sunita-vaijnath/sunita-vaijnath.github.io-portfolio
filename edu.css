@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.portfolio-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    background-color: rgb(237, 229, 244);
+    height: 10vh;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navlist a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #5e058b;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    margin-top: 10vh;
+}
+
+.left-container,
+.right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-container {
+    background-color: rgb(237, 229, 244);
+    width: 70%;
+    padding: 3rem;
+}
+
+.right-container {
+    background-color: rgb(160, 125, 192);
+    width: 30%;
+}
+
+.icons .fa-brands {
+    color: rgb(19, 2, 26);
+    font-size: 1.7rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.education-block {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-block h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.education-block p {
+    margin: 15px 0;
+    line-height: 1.8;
+    color: #555;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .navlist {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navlist a {
+        padding: 10px 0;
+    }
+
+    .left-container,
+    .right-container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .education-block {
+        padding: 1rem;
+    }
+
+    .education-block h2 {
+        font-size: 1.5rem;
+    }
+
+    .education-block p {
+        font-size: 0.9rem;
+    }
+}

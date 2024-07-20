@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Sunita Vaijnath, Web Developer">
+    <title>SUNTIA - PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+        }
+
+        .portfolio-container {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .navlist {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #ffffff;
+            height: 10vh;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+        }
+
+        .navlist a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            color: #5e058b;
+            margin-right: 2rem;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .navlist a:hover {
+            color: #a46ec0;
+        }
+
+        .left-container {
+            background-color: #ede5f4;
+            width: 70%;
+            padding: 3rem;
+        }
+
+        .right-container {
+            background-color: #ede5f4;
+            width: 30%;
+            display: flex;
+            justify-content: flex-end;
+            /* Adjust alignment to shift image to the left */
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .right-container img {
+            margin-right: auto;
+            max-width: 80%;
+            /* Adjust width of the image */
+            height: auto;
+            border-radius: 50%;
+            /* Make the image circular */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .icons {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .icons i {
+            font-size: 2rem;
+            color: #13021a;
+            transition: color 0.3s ease;
+        }
+
+        .icons i:hover {
+            color: #5e058b;
+        }
+
+        .content {
+            margin-top: 2rem;
+            color: #cc7ef3;
+        }
+
+        .content .intro {
+            font-size: 1.2rem;
+            color: #09030c;
+        }
+
+        .content .intro span {
+            color: #5e058b;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            color: #892ec2;
+            margin-top: 1rem;
+        }
+
+        .content p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.8rem;
+        }
+
+        .btn-container {
+            margin-top: 2rem;
+        }
+
+        .btn-container a {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-container button {
+            border: 2px solid #892ec2;
+            background-color: transparent;
+            color: #892ec2;
+            font-size: 1.1rem;
+            padding: 0.8rem 1.5rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-container button:hover {
+            background-color: #892ec2;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-container {
+                flex-direction: column;
+            }
+
+            .navlist {
+                justify-content: center;
+                text-align: center;
+                position: static;
+                width: 100%;
+                height: auto;
+            }
+
+            .navlist a {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+
+            .left-container {
+                width: 100%;
+                padding: 2rem;
+            }
+
+            .right-container {
+                display: none;
+            }
+
+            .content {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .content h1 {
+                font-size: 2.5rem;
+            }
+
+            .btn-container {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="portfolio-container">
+        <nav class="navlist">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="edu.html">EDUCATION</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <div class="left-container">
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="content">
+                <p class="intro">Hi! I'm <span><b>Sunita Vaijnath</b></span></p>
+                <h1>Web Developer</h1>
+                <p>Hello, My name is Sunita Randive. I am pursuing TE degree in COMPUTER ENGINEERING. I have a strong
+                    interest in the intersection of technology. <br>I am dedicated to learning about the latest
+                    developments in the field and have a passion for utilizing technology to solve real world problems.
+                </p>
+                <div class="btn-container">
+                    <a href="RESUME.pdf">
+                        <button>RESUME</button>
+                    </a>
+                    <a href="contact.html">
+                        <button>CONTACT</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <img src="sunipfp1.jpeg" alt="Sunita Vaijnath's Photo">
+        </div>
+    </header>
+</body>
+
+</html>
